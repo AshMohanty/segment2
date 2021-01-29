@@ -9,6 +9,8 @@ function Ecommerce({ Component, pageProps, categories }) {
     </Layout>
   )
 }
+var Analytics = require('analytics-node');
+var analytics = new Analytics('6LhnFyheK3RcoATlumr5nOATFrVNhsOr');
 
 Ecommerce.getInitialProps = async () => {
   const categories = await fetchCategories()
